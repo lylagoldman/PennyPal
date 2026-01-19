@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA9CDA3F2F05B1B4000892C1 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */; };
+		BA9CDA402F05B1B4000892C1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */; };
+		BA9CDA452F05B1DA000892C1 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA442F05B1DA000892C1 /* Validations.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BA674EA22EAC1E67009318D4 /* PennyPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennyPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		BA9CDA442F05B1DA000892C1 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,7 +26,7 @@
 				Info.plist,
 			);
 			platformFiltersByRelativePath = {
-				"Launch Screen.storyboard" = (ios, );
+				"Launch/Launch Screen.storyboard" = (ios, );
 			};
 			target = BA674EA12EAC1E67009318D4 /* PennyPal */;
 		};
@@ -50,6 +59,7 @@
 			children = (
 				BA674EA42EAC1E67009318D4 /* PennyPal */,
 				BA674EA32EAC1E67009318D4 /* Products */,
+				BA9CDA3E2F05B1B4000892C1 /* Log In and Sign Up Screens */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +69,24 @@
 				BA674EA22EAC1E67009318D4 /* PennyPal.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BA9CDA3E2F05B1B4000892C1 /* Log In and Sign Up Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BA9CDA412F05B1BB000892C1 /* Helpers */,
+				BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */,
+				BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */,
+			);
+			path = "Log In and Sign Up Screens";
+			sourceTree = "<group>";
+		};
+		BA9CDA412F05B1BB000892C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA9CDA442F05B1DA000892C1 /* Validations.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,7 +122,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					BA674EA12EAC1E67009318D4 = {
 						CreatedOnToolsVersion = 26.0.1;
@@ -135,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9CDA3F2F05B1B4000892C1 /* LogIn.swift in Sources */,
+				BA9CDA402F05B1B4000892C1 /* SignUp.swift in Sources */,
+				BA9CDA452F05B1DA000892C1 /* Validations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +231,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -257,6 +289,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -279,9 +312,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,7 +334,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,9 +355,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -342,7 +377,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

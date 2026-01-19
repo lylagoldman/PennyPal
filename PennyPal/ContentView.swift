@@ -8,17 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    var images = ["VLogo", "HLogo"]
-    
     var body: some View {
         NavigationStack {
-            VStack {
-                Image(images[0])
-                    .resizable()
-                    .frame(width: 650, height: 280)
-                
-            }
-            .padding()
+            LaunchView()
         }
     }
 }
