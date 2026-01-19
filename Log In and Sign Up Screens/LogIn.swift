@@ -44,6 +44,8 @@ struct LogIn: View {
                         TextField("Email", text: $emailText)
                             .focused($focusedField, equals: .email)
                             .padding()
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.never)
                             .background(Color(.lightMint))
                             .cornerRadius(20)
                             .background(
@@ -66,6 +68,8 @@ struct LogIn: View {
                         TextField("Password", text: $passwordText)
                             .focused($focusedField, equals: .password)
                             .padding()
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.never)
                             .background(Color(.lightMint))
                             .cornerRadius(20)
                             .background(
@@ -119,7 +123,7 @@ struct LogIn: View {
                         Button {
                             
                         } label: {
-                            Text("Create Accounnt")
+                            Text("Create Account")
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(.black)
                                 .padding(.vertical, 5)

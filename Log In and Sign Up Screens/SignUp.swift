@@ -41,6 +41,8 @@ struct SignUp: View {
                         TextField("Email", text: $emailText)
                             .focused($focusedField, equals: .email)
                             .padding()
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.never)
                             .background(Color(.lightMint))
                             .cornerRadius(20)
                             .background(
