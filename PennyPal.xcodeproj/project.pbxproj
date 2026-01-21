@@ -10,6 +10,7 @@
 		BA9CDA3F2F05B1B4000892C1 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */; };
 		BA9CDA402F05B1B4000892C1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */; };
 		BA9CDA452F05B1DA000892C1 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA442F05B1DA000892C1 /* Validations.swift */; };
+		BAE412F42F20438E00F8DD69 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE412F32F20438E00F8DD69 /* AppSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		BA9CDA442F05B1DA000892C1 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		BAE412F32F20438E00F8DD69 /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -77,6 +79,7 @@
 				BA9CDA412F05B1BB000892C1 /* Helpers */,
 				BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */,
 				BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */,
+				BAE412F32F20438E00F8DD69 /* AppSession.swift */,
 			);
 			path = "Log In and Sign Up Screens";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE412F42F20438E00F8DD69 /* AppSession.swift in Sources */,
 				BA9CDA3F2F05B1B4000892C1 /* LogIn.swift in Sources */,
 				BA9CDA402F05B1B4000892C1 /* SignUp.swift in Sources */,
 				BA9CDA452F05B1DA000892C1 /* Validations.swift in Sources */,

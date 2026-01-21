@@ -22,7 +22,7 @@ struct LaunchView: View {
     
                 ButtonView(title: "Log In", buttonColor: .mediumMint, newScreen: AnyView(LogIn()))
                     .padding(.bottom, 5)
-                ButtonView(title: "Sign Up", buttonColor: .lightMint, newScreen: AnyView(SignUp()))
+                ButtonView(title: "Sign Up", buttonColor: .lightMint, newScreen: AnyView(RegistrationView()))
                     .padding(.bottom, 5)
             }
             .padding()
