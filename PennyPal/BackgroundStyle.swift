@@ -14,3 +14,6 @@ struct BackgroundA: View {
         }
     }
 }
+#Preview {
+    BackgroundA()
+}

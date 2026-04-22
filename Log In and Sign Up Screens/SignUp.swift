@@ -32,10 +32,13 @@ struct RegistrationView: View {
                         .font(.system(size: 32))
                         .fontWeight(.bold)
                         .frame(maxHeight: .infinity, alignment: .center)
-                        .padding(40)
+                        .padding(.top, 120)
+                        .padding(.bottom, 50)
+                        .foregroundStyle(Color(.charcoal))
+
                     ZStack {
                         RoundedRectangle(cornerRadius: 75)
-                            .frame(height: 800, alignment: .center)
+                            .frame(height: 950, alignment: .center)
                             .foregroundColor(.whiteMint)
                         VStack {
                             Text("Enter your credentials to create an account")

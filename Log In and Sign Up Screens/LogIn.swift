@@ -12,7 +12,6 @@ enum FocusedField {
 }
 
 struct LogIn: View {
-    @EnvironmentObject private var session: AppSession
     @State private var emailText = ""
     @State private var passwordText = ""
 
@@ -30,14 +29,16 @@ struct LogIn: View {
             ZStack {
                 BackgroundA()
                 VStack {
-                    Text("Login Here")
+                    Text("Welcome")
                         .font(.system(size: 32))
+                        .foregroundStyle(Color(.charcoal))
                         .fontWeight(.bold)
                         .frame(maxHeight: .infinity, alignment: .center)
-                        .padding(40)
+                        .padding(.top, 120)
+                        .padding(.bottom, 50)
                     ZStack {
                         RoundedRectangle(cornerRadius: 75)
-                            .frame(height: 800, alignment: .center)
+                            .frame(height: 950, alignment: .center)
                             .foregroundColor(.whiteMint)
                         VStack {
                             Text("Welcome Back!")
