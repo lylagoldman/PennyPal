@@ -2,7 +2,7 @@
 //  Validations.swift
 //  PennyPal
 //
-//  Created by Lyla Goldman on 12/31/25.
+//  Created by Lyla on 12/31/25.
 //
 
 import Foundation

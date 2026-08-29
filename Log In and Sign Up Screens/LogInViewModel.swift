@@ -35,16 +35,16 @@ final class LogInViewModel: ObservableObject {
         isValidPassword = Validator.validatePassword(newValue)
     }
 
-    func signIn(onSuccess: @escaping () -> Void) {
+    func signIn(onSuccess: @escaping (UserProfile) -> Void) {
         errorMessage = nil
         guard Validator.validateEmail(emailText), Validator.validatePassword(passwordText) else { return }
         isLoading = true
 
         Task {
             do {
-                try await auth.signIn(email: emailText, password: passwordText)
+                let user = try await auth.signIn(email: emailText, password: passwordText)
                 isLoading = false
-                onSuccess()
+                onSuccess(user)
             } catch {
                 isLoading = false
                 if let authError = error as? AuthError {
@@ -56,4 +56,3 @@ final class LogInViewModel: ObservableObject {
         }
     }
 }
-

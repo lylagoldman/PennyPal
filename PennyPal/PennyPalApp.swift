@@ -2,7 +2,7 @@
 //  PennyPalApp.swift
 //  PennyPal
 //
-//  Created by Lyla Goldman on 10/24/25.
+//  Created by Lyla on 10/24/25.
 //
 
 import SwiftUI

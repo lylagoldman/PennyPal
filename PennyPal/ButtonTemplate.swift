@@ -2,7 +2,7 @@
 //  ButtonView.swift
 //  PennyPal
 //
-//  Created by Lyla Goldman on 10/30/25.
+//  Created by Lyla on 10/30/25.
 //
 
 import SwiftUI
