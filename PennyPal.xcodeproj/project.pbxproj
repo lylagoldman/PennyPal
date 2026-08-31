@@ -3,63 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA9CDA3F2F05B1B4000892C1 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */; };
-		BA9CDA402F05B1B4000892C1 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */; };
-		BA9CDA452F05B1DA000892C1 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9CDA442F05B1DA000892C1 /* Validations.swift */; };
+		BA88E7E2304485590033CC39 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = BA2181523043589000A63550 /* FirebaseAI */; };
+		BA88E7E9304485590033CC39 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BA2181603043589000A63550 /* FirebaseAuth */; };
+		BA88E7EB304485590033CC39 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = BA2181643043589000A63550 /* FirebaseCore */; };
+		BAC61F013044D8B400B7C9F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC61F003044D8B400B7C9F7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA41D130304370FF0049402E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+			);
+			name = "Embed Frameworks";
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA674EA22EAC1E67009318D4 /* PennyPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennyPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
-		BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
-		BA9CDA442F05B1DA000892C1 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		BAC61F003044D8B400B7C9F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BA6650952EB2F4DA008946B6 /* Exceptions for "PennyPal" folder in "PennyPal" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			platformFiltersByRelativePath = {
-				"Launch/Launch Screen.storyboard" = (ios, );
-			};
-			target = BA674EA12EAC1E67009318D4 /* PennyPal */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BA674EA42EAC1E67009318D4 /* PennyPal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BA6650952EB2F4DA008946B6 /* Exceptions for "PennyPal" folder in "PennyPal" target */,
-			);
 			path = PennyPal;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BA674E9F2EAC1E67009318D4 /* Frameworks */ = {
+		BA41D12F304370FF0049402E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				BA88E7EB304485590033CC39 /* FirebaseCore in Frameworks */,
+				BA88E7E9304485590033CC39 /* FirebaseAuth in Frameworks */,
+				BA88E7E2304485590033CC39 /* FirebaseAI in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA41D1DB304372780049402E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA674E992EAC1E67009318D4 = {
 			isa = PBXGroup;
 			children = (
+				BAC61F003044D8B400B7C9F7 /* GoogleService-Info.plist */,
 				BA674EA42EAC1E67009318D4 /* PennyPal */,
+				BA41D1DB304372780049402E /* Frameworks */,
 				BA674EA32EAC1E67009318D4 /* Products */,
-				BA9CDA3E2F05B1B4000892C1 /* Log In and Sign Up Screens */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,24 +74,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA9CDA3E2F05B1B4000892C1 /* Log In and Sign Up Screens */ = {
-			isa = PBXGroup;
-			children = (
-				BA9CDA412F05B1BB000892C1 /* Helpers */,
-				BA9CDA3C2F05B1B4000892C1 /* LogIn.swift */,
-				BA9CDA3D2F05B1B4000892C1 /* SignUp.swift */,
-			);
-			path = "Log In and Sign Up Screens";
-			sourceTree = "<group>";
-		};
-		BA9CDA412F05B1BB000892C1 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				BA9CDA442F05B1DA000892C1 /* Validations.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,19 +81,44 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA674EAD2EAC1E68009318D4 /* Build configuration list for PBXNativeTarget "PennyPal" */;
 			buildPhases = (
-				BA674E9E2EAC1E67009318D4 /* Sources */,
-				BA674E9F2EAC1E67009318D4 /* Frameworks */,
 				BA674EA02EAC1E67009318D4 /* Resources */,
+				BA2182403043620600A63550 /* Sources */,
+				BA41D12F304370FF0049402E /* Frameworks */,
+				BA41D130304370FF0049402E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BA218212304361D800A63550 /* PBXTargetDependency */,
+				BA218214304361D800A63550 /* PBXTargetDependency */,
+				BA218216304361D800A63550 /* PBXTargetDependency */,
+				BA218218304361D800A63550 /* PBXTargetDependency */,
+				BA21821A304361D800A63550 /* PBXTargetDependency */,
+				BA21821C304361D800A63550 /* PBXTargetDependency */,
+				BA21821E304361D800A63550 /* PBXTargetDependency */,
+				BA218220304361D800A63550 /* PBXTargetDependency */,
+				BA218222304361D800A63550 /* PBXTargetDependency */,
+				BA218224304361D800A63550 /* PBXTargetDependency */,
+				BA218226304361D800A63550 /* PBXTargetDependency */,
+				BA218228304361D800A63550 /* PBXTargetDependency */,
+				BA21822A304361D800A63550 /* PBXTargetDependency */,
+				BA21822C304361D800A63550 /* PBXTargetDependency */,
+				BA21822E304361D800A63550 /* PBXTargetDependency */,
+				BA218230304361D800A63550 /* PBXTargetDependency */,
+				BA218232304361D800A63550 /* PBXTargetDependency */,
+				BA218236304361D800A63550 /* PBXTargetDependency */,
+				BA218238304361D800A63550 /* PBXTargetDependency */,
+				BA21823A304361D800A63550 /* PBXTargetDependency */,
+				BA21823C304361D800A63550 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				BA674EA42EAC1E67009318D4 /* PennyPal */,
 			);
 			name = PennyPal;
 			packageProductDependencies = (
+				BA2181523043589000A63550 /* FirebaseAI */,
+				BA2181603043589000A63550 /* FirebaseAuth */,
+				BA2181643043589000A63550 /* FirebaseCore */,
 			);
 			productName = PennyPal;
 			productReference = BA674EA22EAC1E67009318D4 /* PennyPal.app */;
@@ -122,7 +132,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					BA674EA12EAC1E67009318D4 = {
 						CreatedOnToolsVersion = 26.0.1;
@@ -138,7 +148,10 @@
 			);
 			mainGroup = BA674E992EAC1E67009318D4;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = BA674EA32EAC1E67009318D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,31 +164,112 @@
 /* Begin PBXResourcesBuildPhase section */
 		BA674EA02EAC1E67009318D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				BAC61F013044D8B400B7C9F7 /* GoogleService-Info.plist in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BA674E9E2EAC1E67009318D4 /* Sources */ = {
+		BA2182403043620600A63550 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				BA9CDA3F2F05B1B4000892C1 /* LogIn.swift in Sources */,
-				BA9CDA402F05B1B4000892C1 /* SignUp.swift in Sources */,
-				BA9CDA452F05B1DA000892C1 /* Validations.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BA218212304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218211304361D800A63550 /* FirebaseAnalytics */;
+		};
+		BA218214304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218213304361D800A63550 /* FirebaseAnalyticsCore */;
+		};
+		BA218216304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218215304361D800A63550 /* FirebaseAnalyticsIdentitySupport */;
+		};
+		BA218218304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218217304361D800A63550 /* FirebaseAppCheck */;
+		};
+		BA21821A304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218219304361D800A63550 /* FirebaseAppDistribution-Beta */;
+		};
+		BA21821C304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21821B304361D800A63550 /* FirebaseAuth */;
+		};
+		BA21821E304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21821D304361D800A63550 /* FirebaseAuthCombine-Community */;
+		};
+		BA218220304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21821F304361D800A63550 /* FirebaseCore */;
+		};
+		BA218222304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218221304361D800A63550 /* FirebaseCrashlytics */;
+		};
+		BA218224304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218223304361D800A63550 /* FirebaseDatabase */;
+		};
+		BA218226304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218225304361D800A63550 /* FirebaseFirestore */;
+		};
+		BA218228304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218227304361D800A63550 /* FirebaseFirestoreCombine-Community */;
+		};
+		BA21822A304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218229304361D800A63550 /* FirebaseFunctions */;
+		};
+		BA21822C304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21822B304361D800A63550 /* FirebaseFunctionsCombine-Community */;
+		};
+		BA21822E304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21822D304361D800A63550 /* FirebaseInAppMessaging-Beta */;
+		};
+		BA218230304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21822F304361D800A63550 /* FirebaseInstallations */;
+		};
+		BA218232304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218231304361D800A63550 /* FirebaseMLModelDownloader */;
+		};
+		BA218236304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218235304361D800A63550 /* FirebasePerformance */;
+		};
+		BA218238304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218237304361D800A63550 /* FirebaseRemoteConfig */;
+		};
+		BA21823A304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA218239304361D800A63550 /* FirebaseStorage */;
+		};
+		BA21823C304361D800A63550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = BA21823B304361D800A63550 /* FirebaseStorageCombine-Community */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		BA674EAB2EAC1E68009318D4 /* Debug */ = {
+		BA674EAB2EAC1E68009318D4 /* Debug configuration for PBXProject "PennyPal" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -188,16 +282,16 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = NO;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -214,7 +308,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -225,22 +319,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = PennyPal;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
-		BA674EAC2EAC1E68009318D4 /* Release */ = {
+		BA674EAC2EAC1E68009318D4 /* Release configuration for PBXProject "PennyPal" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -253,16 +350,16 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = NO;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -284,10 +381,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = PennyPal;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -295,35 +394,26 @@
 			};
 			name = Release;
 		};
-		BA674EAE2EAC1E68009318D4 /* Debug */ = {
+		BA674EAE2EAC1E68009318D4 /* Debug configuration for PBXNativeTarget "PennyPal" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = DD7NKKWSDH;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PennyPal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = PennyPal;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = name.lylagoldman.PennyPal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PennyPal;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -334,39 +424,29 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		BA674EAF2EAC1E68009318D4 /* Release */ = {
+		BA674EAF2EAC1E68009318D4 /* Release configuration for PBXNativeTarget "PennyPal" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = DD7NKKWSDH;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PennyPal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = PennyPal;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = name.lylagoldman.PennyPal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PennyPal;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -377,7 +457,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -387,22 +466,154 @@
 		BA674E9D2EAC1E67009318D4 /* Build configuration list for PBXProject "PennyPal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA674EAB2EAC1E68009318D4 /* Debug */,
-				BA674EAC2EAC1E68009318D4 /* Release */,
+				BA674EAB2EAC1E68009318D4 /* Debug configuration for PBXProject "PennyPal" */,
+				BA674EAC2EAC1E68009318D4 /* Release configuration for PBXProject "PennyPal" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		BA674EAD2EAC1E68009318D4 /* Build configuration list for PBXNativeTarget "PennyPal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA674EAE2EAC1E68009318D4 /* Debug */,
-				BA674EAF2EAC1E68009318D4 /* Release */,
+				BA674EAE2EAC1E68009318D4 /* Debug configuration for PBXNativeTarget "PennyPal" */,
+				BA674EAF2EAC1E68009318D4 /* Release configuration for PBXNativeTarget "PennyPal" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA2181523043589000A63550 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		BA2181603043589000A63550 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BA2181643043589000A63550 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		BA218211304361D800A63550 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		BA218213304361D800A63550 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		BA218215304361D800A63550 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		BA218217304361D800A63550 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		BA218219304361D800A63550 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		BA21821B304361D800A63550 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BA21821D304361D800A63550 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		BA21821F304361D800A63550 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		BA218221304361D800A63550 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		BA218223304361D800A63550 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BA218225304361D800A63550 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BA218227304361D800A63550 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		BA218229304361D800A63550 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		BA21822B304361D800A63550 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		BA21822D304361D800A63550 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		BA21822F304361D800A63550 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		BA218231304361D800A63550 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		BA218235304361D800A63550 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		BA218237304361D800A63550 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		BA218239304361D800A63550 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		BA21823B304361D800A63550 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA2181513043589000A63550 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA674E9A2EAC1E67009318D4 /* Project object */;
 }
